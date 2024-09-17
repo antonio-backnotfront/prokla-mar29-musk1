@@ -1,0 +1,48 @@
+.invite-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14rem;
+  flex-grow: 1;
+  z-index: 2;
+  padding: 32px 32px;
+}
+
+/* padding: 10rem; */
+.invite-card-content {
+  background-color: #1e1e1e; /* Adjusted background color */
+  padding: 32px 110px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.channel-logo {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  
+  border-radius: 50%;
+}
+
+.channel-name {
+  font-size: 26px;
+  margin-top: 10px;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+
+.channel-handle {
+  /* margin-top: 5px; */
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #949494;
+}
+
+.channel-description {
+  margin-top: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
