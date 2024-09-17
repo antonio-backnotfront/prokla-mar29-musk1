@@ -28,26 +28,26 @@ function InviteCard() {
   const ad = queryParameters.get("ad")
 
   let inviteLink = "";
-  if (geo == "uk"){
-    if (ad == "1"){
+  if (geo === "uk"){
+    if (ad === "1"){
       inviteLink = "tg://join?invite=cJTe3xpfDUZjZDAy";
-    } else if (ad == "2"){
+    } else if (ad === "2"){
       inviteLink = "tg://join?invite=D5JpzJPeWedlYTIy";
     } else{
       inviteLink = "tg://join?invite=cCF9kltJ95BkZGZi";
     }
-  } else if (geo == "lit"){
-    if (ad == "1"){
+  } else if (geo === "lit"){
+    if (ad === "1"){
       inviteLink = "tg://join?invite=dMg69bpsyRo2MzRi";
-    } else if (ad == "2"){
+    } else if (ad === "2"){
       inviteLink = "tg://join?invite=VcovFCUD5r8wOTIy";
     } else{
       inviteLink = "tg://join?invite=dDxfzXBr";
     }
   } else {
-    if (ad == "1"){
+    if (ad === "1"){
       inviteLink = "tg://join?invite=UeqXH_c9lhM3ZGJi";
-    } else if (ad == "2"){
+    } else if (ad === "2"){
       inviteLink = "tg://join?invite=uUIIEA3apdMzMDgy";
     } else{
       inviteLink = "tg://join?invite=lcf34o0M6gBkMDIy";
