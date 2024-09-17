@@ -5,13 +5,13 @@
   margin-bottom: 14rem;
   flex-grow: 1;
   z-index: 2;
-  padding: 32px 32px;
+  padding: 32px 128px;
 }
 
 /* padding: 10rem; */
 .invite-card-content {
   background-color: #1e1e1e; /* Adjusted background color */
-  padding: 32px 110px;
+  padding: 32px 80px;
   border-radius: 10px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
