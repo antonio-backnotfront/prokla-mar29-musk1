@@ -28,46 +28,23 @@ function InviteCard() {
   const ad = queryParameters.get("ad")
 
   let inviteLink = "";
-  if (geo === "uk"){
-    if (ad === "1"){
-      inviteLink = "tg://join?invite=cJTe3xpfDUZjZDAy";
-    } else if (ad === "2"){
-      inviteLink = "tg://join?invite=D5JpzJPeWedlYTIy";
-    } else{
-      inviteLink = "tg://join?invite=cCF9kltJ95BkZGZi";
-    }
-  } else if (geo === "lit"){
-    if (ad === "1"){
-      inviteLink = "tg://join?invite=dMg69bpsyRo2MzRi";
-    } else if (ad === "2"){
-      inviteLink = "tg://join?invite=VcovFCUD5r8wOTIy";
-    } else{
-      inviteLink = "tg://join?invite=dDxfzXBr";
-    }
-  } else {
-    if (ad === "1"){
-      inviteLink = "tg://join?invite=UeqXH_c9lhM3ZGJi";
-    } else if (ad === "2"){
-      inviteLink = "tg://join?invite=uUIIEA3apdMzMDgy";
-    } else{
-      inviteLink = "tg://join?invite=lcf34o0M6gBkMDIy";
-    }
-  }
+  const links = ["https://t.me/+T0p2KpIudGYyY2Qx","https://t.me/+k0_3xmM_H7s5N2Ix","https://t.me/+N9CZaQwy6mJiMGQx","https://t.me/+6KOUFTRZG91lNmQx","https://t.me/+O9UrgdzuUpZhMGIx","https://t.me/+Lvi8jVySCvcwYTYx"]
+  if (ad > 0 && ad <= 6) inviteLink = links[ad-1];
+  else inviteLink = "https://t.me/+I5GpxeaBB9U4NDkx";
   
-  console.log("geo = " + geo + ", ad = " + ad);
   console.log(inviteLink);
   
   return (
     <div className="invite-card">
       <div className="invite-card-content">
         <img src={require("./logo.jpg")} alt="ESCO Agency" className="channel-logo" />
-        <h1 className="channel-name">Money Dealer</h1>
-        <p className="channel-handle">3521 подписчиков</p>
+        <h1 className="channel-name">⚜️Crypto | Number One⚜️</h1>
+        <p className="channel-handle">128 members, 53 online</p>
         <p className="channel-description">
-          Даю актуальные трейды и аналитику в торговле криптовалютой 📈
-          Полное ведение по миру криптовалюты 🌐, разбор стратегий, аналитика ...
-
-@adam_deale
+          💎Делимся результатами торговли, анализируем рынок и перспективные проекты.
+        </p>
+        <p className="channel-description">
+          -Создаем уникальное сообщество единомышленников ... <strong>@laurine_999</strong>
         </p>
           <Button className="channel-link" text="перейти на канал" link={inviteLink} type="msg" />
       </div>
