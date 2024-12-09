@@ -25,7 +25,7 @@ import Button from "./Button";
 
 function InviteCard() {
   const queryParameters = new URLSearchParams(window.location.search)
-  const geo = queryParameters.get("geo")
+  // const geo = queryParameters.get("geo")
   const ad = queryParameters.get("ad")
 
   let inviteLink = "";
