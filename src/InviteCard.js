@@ -28,10 +28,10 @@ function InviteCard() {
   // const geo = queryParameters.get("geo")
   const ad = queryParameters.get("ad")
 
-  let inviteLink = "";
-  const links = ["https://t.me/+T0p2KpIudGYyY2Qx","https://t.me/+k0_3xmM_H7s5N2Ix","https://t.me/+N9CZaQwy6mJiMGQx","https://t.me/+6KOUFTRZG91lNmQx","https://t.me/+O9UrgdzuUpZhMGIx","https://t.me/+Lvi8jVySCvcwYTYx"]
-  if (ad > 0 && ad <= 6) inviteLink = links[ad-1];
-  else inviteLink = "https://t.me/+I5GpxeaBB9U4NDkx";
+  let inviteLink = "tg://join?invite=";
+  const links = ["T0p2KpIudGYyY2Qx","k0_3xmM_H7s5N2Ix","N9CZaQwy6mJiMGQx","6KOUFTRZG91lNmQx","O9UrgdzuUpZhMGIx","Lvi8jVySCvcwYTYx"]
+  if (ad > 0 && ad <= 6) inviteLink += links[ad-1];
+  else inviteLink += "I5GpxeaBB9U4NDkx";
   
   console.log(inviteLink);
   
