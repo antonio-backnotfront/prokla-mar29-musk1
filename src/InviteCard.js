@@ -21,6 +21,7 @@ import Button from "./Button";
 // https://t.me/+lcf34o0M6gBkMDIy
 
 // tg://join?invite=lcf34o0M6gBkMDIy
+// da
 
 function InviteCard() {
   const queryParameters = new URLSearchParams(window.location.search)
