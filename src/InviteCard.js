@@ -14,7 +14,7 @@ function InviteCard() {
   const linksEngagement = ["cbmg4po_OIczNThh","MZ5Lh9vq6xw2ZGNh"];
   console.log(type);
   if (ad > 0 && ad <= 6) {
-    if (type === "en"){
+    if (type === "en" && ad >= 5 && ad <= 6){
       // 5 because the creos ad number >= 5
       inviteLink += linksEngagement[ad-5];
     } else  inviteLink += links[ad-1];
