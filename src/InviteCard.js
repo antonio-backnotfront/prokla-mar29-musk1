@@ -3,35 +3,22 @@ import './InviteCard.css';
 
 import Button from "./Button";
 
-// бл ук пл
-// https://t.me/+cJTe3xpfDUZjZDAy
-// https://t.me/+D5JpzJPeWedlYTIy
-// https://t.me/+cCF9kltJ95BkZGZi
-
-// лит лат гер
-// https://t.me/+dMg69bpsyRo2MzRi
-// https://t.me/+VcovFCUD5r8wOTIy
-// https://t.me/+dDxfzXBr-gU0MDIy
-
-
-
-// кз
-// https://t.me/+UeqXH_c9lhM3ZGJi
-// https://t.me/+uUIIEA3apdMzMDgy
-// https://t.me/+lcf34o0M6gBkMDIy
-
-// tg://join?invite=lcf34o0M6gBkMDIy
-// da
-
 function InviteCard() {
   const queryParameters = new URLSearchParams(window.location.search)
   // const geo = queryParameters.get("geo")
-  const ad = queryParameters.get("ad")
+  const ad = queryParameters.get("ad");
+  const type = queryParameters.get("type");
 
   let inviteLink = "tg://join?invite=";
-  const links = ["T0p2KpIudGYyY2Qx","k0_3xmM_H7s5N2Ix","N9CZaQwy6mJiMGQx","6KOUFTRZG91lNmQx","O9UrgdzuUpZhMGIx","Lvi8jVySCvcwYTYx"]
-  if (ad > 0 && ad <= 6) inviteLink += links[ad-1];
-  else inviteLink += "I5GpxeaBB9U4NDkx";
+  const links = ["T0p2KpIudGYyY2Qx","k0_3xmM_H7s5N2Ix","N9CZaQwy6mJiMGQx","6KOUFTRZG91lNmQx","O9UrgdzuUpZhMGIx","Lvi8jVySCvcwYTYx"];
+  const linksEngagement = ["cbmg4po_OIczNThh","MZ5Lh9vq6xw2ZGNh"];
+  console.log(type);
+  if (ad > 0 && ad <= 6) {
+    if (type === "en"){
+      // 5 because the creos ad number >= 5
+      inviteLink += linksEngagement[ad-5];
+    } else  inviteLink += links[ad-1];
+  } else inviteLink += "e5lXj1T0oVBlMzUx";
   
   console.log(inviteLink);
   
@@ -40,7 +27,7 @@ function InviteCard() {
       <div className="invite-card-content">
         <img src={require("./logo.jpg")} alt="ESCO Agency" className="channel-logo" />
         <h1 className="channel-name">⚜️Crypto | Number One⚜️</h1>
-        <p className="channel-handle">128 members, 53 online</p>
+        <p className="channel-handle">135 members, 41 online</p>
         <p className="channel-description">
           💎Делимся результатами торговли, анализируем рынок и перспективные проекты.
         </p>
