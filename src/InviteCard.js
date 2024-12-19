@@ -27,7 +27,7 @@ function InviteCard() {
       <div className="invite-card-content">
         <img src={require("./logo.jpg")} alt="ESCO Agency" className="channel-logo" />
         <h1 className="channel-name">⚜️Crypto | Number One⚜️</h1>
-        <p className="channel-handle">135 members, 41 online</p>
+        <p className="channel-handle">161 members, 44 online</p>
         <p className="channel-description">
           💎Делимся результатами торговли, анализируем рынок и перспективные проекты.
         </p>
