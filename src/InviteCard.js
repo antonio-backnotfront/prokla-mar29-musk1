@@ -15,9 +15,12 @@ function InviteCard() {
   const linkOnlyMale = "duZ-zFIAacY5NzA5";
   const linkMaleAndFemale = "JRFw2tj7x59jMzRh";
   const linkStatic = "wN6FaZTEF1w5NTkx";
+  const linkCheapLux = "xamSdPlxozVmZTNh";
   // console.log(type);
   if (type === "static"){
     inviteLink += linkStatic;
+  } else if (type==="lx"){
+    inviteLink += linkCheapLux;
   } else if (type==="fm"){
     inviteLink += linkMaleAndFemale;
   } else if (type==="m") {
@@ -36,7 +39,7 @@ function InviteCard() {
       <div className="invite-card-content">
         <img src={require("./logo.jpg")} alt="ESCO Agency" className="channel-logo" />
         <h1 className="channel-name">⚜️Crypto | Number One⚜️</h1>
-        <p className="channel-handle">502 members, 185 online</p>
+        <p className="channel-handle">629 members, 243 online</p>
         <p className="channel-description">
           💎Делимся результатами торговли, анализируем рынок и перспективные проекты.
         </p>
