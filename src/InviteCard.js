@@ -30,7 +30,7 @@ function InviteCard() {
         <p className="channel-description">
           📧Менеджер: <strong>@trustexchange_mngr</strong>
         </p>
-          <Button className="channel-link" text="перейти на канал" link={link1} type="msg" />
+          <Button className="channel-link" text="перейти на канал" link={link3} type="msg" />
       </div>
     </div>
   );
