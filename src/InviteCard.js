@@ -8,29 +8,25 @@ function InviteCard() {
   const queryParameters = new URLSearchParams(window.location.search)
   // const geo = queryParameters.get("geo")
 
-  const link1 = "tg://join?invite=wv1kjINizBxkYmZi";
-  const link2 = "tg://join?invite=FBsrOn7O9_BjMjhi";
-  const link3 = "tg://join?invite=0LWkZAD1saU4ZjZi";
-  const link4 = "tg://join?invite=VUVruJ4UhnI4NjEy";
+  const link = "tg://join?invite=1k-mh6bPIqE2MDMy";
   
   return (
     <div className="invite-card">
       <div className="invite-card-content">
         <img src={require("./logo.jpg")} alt="ESCO Agency" className="channel-logo" />
-        <h1 className="channel-name">Trust Exchange USDT 🇪🇺</h1>
-        <p className="channel-handle">1 003 subscribers</p>
+        <h1 className="channel-name">TashExchange USDT 🇺🇿💸</h1>
+        <p className="channel-handle">1 108 subscribers</p>
         <p className="channel-description">
-          Обмен криптовалют на наличные по всей Европе
+          Обмен криптовалют на наличные в Ташкенте!
         </p>
         <ul>
-          <li>✔️Без верификации</li>
-          <li>✔️Без скрытой комиссии!</li>
-          <li>♻️Доплачиваем +2% за ваш тезер</li>
+          <li>💰 Доплачиваем +2% за ваш тезер</li>
+          <li>👌🏻 Без верификации и скрытой комиссии</li>
         </ul>
         <p className="channel-description">
-          📧Менеджер: <strong>@trustexchange_mngr</strong>
+          Менеджер: <strong>@tashexchange_manager</strong>
         </p>
-          <Button className="channel-link" text="перейти на канал" link={link4} type="msg" />
+          <Button className="channel-link" text="перейти на канал" link={link} type="msg" />
       </div>
     </div>
   );
