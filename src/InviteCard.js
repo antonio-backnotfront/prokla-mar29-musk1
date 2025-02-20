@@ -17,7 +17,7 @@ function InviteCard() {
         <h1 className="channel-name">TashExchange USDT 🇺🇿💸</h1>
         <p className="channel-handle">1 108 subscribers</p>
         <p className="channel-description">
-          Обмен криптовалют на наличные в Ташкенте!
+          Обмен криптовалют на наличные в Алматы, Астане, Ташкенте!
         </p>
         <ul>
           <li>💰 Доплачиваем +2% за ваш тезер</li>
