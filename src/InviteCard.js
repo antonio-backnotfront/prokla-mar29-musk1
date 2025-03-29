@@ -8,14 +8,14 @@ function InviteCard() {
   const queryParameters = new URLSearchParams(window.location.search)
   // const geo = queryParameters.get("geo")
 
-  const link = "tg://join?invite=1k-mh6bPIqE2MDMy";
+  const link = "tg://join?invite=ltlzFTkOeAhlNmQ6";
   
   return (
     <div className="invite-card">
       <div className="invite-card-content">
         <img src={require("./logo.jpg")} alt="ESCO Agency" className="channel-logo" />
         <h1 className="channel-name">TashExchange USDT 🇺🇿💸</h1>
-        <p className="channel-handle">1 108 subscribers</p>
+        <p className="channel-handle">1 971 subscribers</p>
         <p className="channel-description">
           Обмен криптовалют на наличные в Алматы, Астане, Ташкенте!
         </p>
